@@ -1,4 +1,12 @@
 .changeLink {
     text-decoration: none;
-    color: yellow;
+    color: green;
+}
+
+.changeImg {
+    translate: -100%;
+}
+
+.w-552 {
+    width: 50vh;
 }

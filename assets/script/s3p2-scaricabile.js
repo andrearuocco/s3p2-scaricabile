@@ -33,5 +33,25 @@ function changeAddress () {
 }
 
 // ESERCIZIO 10: Scrivi una funzione per aggiungere una classe CSS ad ogni link Amazon della tabella
+function addClass () {
+    let links = document.querySelectorAll("table a")
+    for(let index of links) {
+        index.classList.add("changeLink")
+    }
+}
+
 // ESERCIZIO 11: Scrivi una funzione per aggiungere/togliere una classe CSS a tutte le immagini della tabella; questa classe deve modificare la visibilità/invisibilità dell'immagine
+function addImg () {
+    let imgs = document.querySelectorAll("table img")
+    for(let index of imgs) {
+        index.classList.add("changeImg")
+    }
+    let firstChild = document.querySelector("table tr th")
+    firstChild.classList.add("changeImg")
+    let inputText = document.querySelectorAll("textarea")
+    for(let i of inputText) {
+        i.classList.add("w-552")
+    }
+}
+
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
