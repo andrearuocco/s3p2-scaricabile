@@ -1,3 +1,19 @@
+footer p b:hover {
+    background-color: burlywood;
+}
+
+table tr:first-child th:nth-child(4):hover {
+    background-color: burlywood;
+}
+
+table tr td:nth-child(4):hover {
+    font-size: x-large;
+}
+
+table tr:first-child th:nth-child(5):hover {
+    background-color: burlywood;
+}
+
 .changeLink {
     text-decoration: none;
     color: green;

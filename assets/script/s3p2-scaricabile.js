@@ -55,3 +55,10 @@ function addImg () {
 }
 
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
+function price () {
+    let array = document.querySelectorAll("table tr td:nth-child(4)")
+    for(let index of array) {
+        let randomColor = Math.floor(Math.random()*16777215).toString(16)
+        index.style.color = "#" + randomColor
+    }
+}
